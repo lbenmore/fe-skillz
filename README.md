@@ -2,7 +2,7 @@
 
 Thank you so much for your interest in a position on the Front End Development team at The Wonderful Company. We are very excited to continue our interview process with you!
 
-Below you will find images of a header that contains sub-nav items. On desktop, sub-nav items should drop down upon hover of the parent nav item. On Mobile the sub-nav should expand and collapse expand and collapse on click events.
+Below you will find images of a header that contains sub-nav items. On desktop, sub-nav items should drop down upon hover of the parent nav item. On Mobile the sub-nav should expand and collapse on click events.
 
 We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far on this assessment!
 
