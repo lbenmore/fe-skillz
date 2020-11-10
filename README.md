@@ -2,13 +2,13 @@
 
 Thank you so much for your interest in a position on the Front End Development team at The Wonderful Company. We are very excited to continue our interview process with you!
 
-Below you will find images of a header that contains sub-nav items. On desktop, sub-nav items should drop down upon hover of the parent nav item. On Mobile the sub-nav should expand and collapse on click events.
+Below you will find images of a header that contains subnav items. On desktop, subnav items should drop down upon hover of the parent nav item. On Mobile the sub-nav should expand and collapse on click events.
 
 We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far on this assessment!
 
-The point of this skill assessment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finesse. Are you a test finatic? Show us your TDD process. Love data and multi-teir architecture? Let us see how you redux. Are you a build ninja? Let see those muscles flexed.
+The point of this skill assessment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finesse. Are you a test finatic? Show us your TDD process. Love data and multi-tier architecture? Let us see how you redux. Are you a build ninja? Let see those muscles flexed.
 
-Here are some things we do want to see: How do you layout your project and what tools you use? How does the project progress? What does the git history look like? Finally how you handle loose requirements - what you bring to the table? Here are some things we value; performance, reproducibility, testing, accessibility, multi-channel deliverability ( SEO, Social, Desktop, Mobile, etc...). You should assume the data is separate than the presentation.
+Here are some things we do want to see: How do you layout the project and what tools do you use? How does the project progress? What does the git history look like? Finally how do you handle loose requirements - what you bring to the table? Here are some things we value; performance, reproducibility, testing, accessibility, multi-channel deliverability ( SEO, Social, Desktop, Mobile, etc...). You should assume the data is separate from the presentation.
 
 Fork this repo into your github or push it into your prefered git provider and make sure it is open. Fill this otherwise empty repo with goodness. You have 72 hours to submit your completed project.
 
