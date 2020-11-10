@@ -1,0 +1,73 @@
+@import '../../variables';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: $gutter;
+  width: 100vw;
+  height: $mobile-header-height;
+  background-color: $grey-darker;
+  color: $white;
+
+  & > .header__hamburger {
+    display: block;
+  }
+
+  & > .logo {
+    width: 80px;
+    height: 100%;
+  }
+
+  & > .header__list {
+    position: absolute;
+    top: $mobile-header-height;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - #{$mobile-header-height});
+    background-color: $grey-dark;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__list {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+
+  .header__list.active {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: $header-height;
+
+    & > .logo {
+      width: 120px;
+    }
+
+    & > .header__hamburger {
+      display: none;
+    }
+
+    & > .logo,
+    & > .header__list {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    & > .header__list {
+      display: flex;
+      justify-content: space-between;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      width: calc(100vw - (120px + (#{$gutter} * 2)));
+      height: calc(#{$header-height} / 2);
+      overflow: visible;
+    }
+  }
+}

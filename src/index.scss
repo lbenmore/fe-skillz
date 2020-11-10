@@ -1,0 +1,29 @@
+@import 'variables';
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $grey-darkest;
+  font-family: $arial;
+  font-size: $body-copy-size;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
