@@ -1,25 +1,25 @@
 @import url('variables.css');
 
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--grey-darkest);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  font-family: var(--arial);
+  font-size: var(--body-copy-size);
 }
 
 button {
-  margin: 0;
-  padding: 0;
   background: transparent;
   border: none;
   border-radius: 0;
   color: inherit;
+  font-size: var(--btn-copy-size);
 }
 
 button:focus {
@@ -28,4 +28,99 @@ button:focus {
    * a focus state on the nav elements
    */
   outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--header-height);
+  background-color: var(--grey-darker);
+  color: var(--white);
+  z-index: 1;
+}
+
+.header__logo {
+  width: calc(116px + (var(--gutter) * 2));
+  height: var(--header-height);
+  background-image: url('we_are_wonderful.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 116px 40px;
+}
+
+.header__nav {
+  flex-grow: 99;
+  height: 50%;
+  background-color: var(--grey-dark);
+}
+
+.nav__list:not(.nav__list--sub) {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+header button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__list--sub {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 var(--gutter-lg);
+  width: 240px;
+  max-height: 0;
+  background-color: var(--grey-dark);
+  overflow: hidden;
+  transform: translate(calc(var(--gutter-lg) * -1), calc(var(--header-height) / 2));
+}
+
+.nav__item:hover .nav__list--sub {
+  max-height: 999px;
+}
+
+.nav__item--sub {
+  padding: var(--gutter) 0;
+  color: var(--beige);
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav__item--sub:last-of-type {
+  padding-bottom: var(--gutter-lg);
+}
+
+.nav__item:hover .nav__item--sub{
+  color: var(--beige);
+}
+
+.nav__item:hover,
+.nav__item .nav__item--sub:hover {
+  color: var(--gold);
 }
