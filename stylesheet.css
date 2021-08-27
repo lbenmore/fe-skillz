@@ -1,0 +1,8 @@
+@import url('variables.css');
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--grey-darkest);
+}
