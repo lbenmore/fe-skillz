@@ -78,7 +78,7 @@ header {
   align-items: center;
 }
 
-header button {
+.nav__item button {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -97,6 +97,12 @@ header button {
   background-color: var(--grey-dark);
   overflow: hidden;
   transform: translate(calc(var(--gutter-lg) * -1), calc(var(--header-height) / 2));
+}
+
+.nav__item:last-of-type .nav__list--sub {
+  left: auto;
+  right: 0;
+  transform: translate(var(--gutter-lg), calc(var(--header-height) / 2));
 }
 
 .nav__item:hover .nav__list--sub {
