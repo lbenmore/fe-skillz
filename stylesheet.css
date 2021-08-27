@@ -6,3 +6,26 @@ body {
   height: 100vh;
   background-color: var(--grey-darkest);
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+}
+
+button:focus {
+  /* this is bad for accessibility.
+   * would request styling comp for 
+   * a focus state on the nav elements
+   */
+  outline: none;
+}
