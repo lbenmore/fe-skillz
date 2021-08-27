@@ -1,0 +1,27 @@
+body {
+  --gutter: 16px;
+  --gutter-lg: 32px;
+  
+  --header-height: 120px;
+  --logo-height: 80px;
+  
+  --arial: Arial, sans-serif;
+  
+  --body-copy-size: 12px;
+  --btn-copy-size: 12px;
+  
+  --white: #ffffff;
+  --black: #000000; 
+  --gold: #d1a04f;
+  --beige: #79766b;
+  --grey-darkest: #151515;
+  --grey-darker: #202020;
+  --grey-dark: #353535;
+  --grey-medium: #323232;
+}
+
+@media (max-width: 1024px) {
+  body {
+    --body-copy-size: 14px;
+  }
+}
