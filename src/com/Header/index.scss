@@ -1,0 +1,32 @@
+@import '../../variables';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: $gutter;
+  width: 100vw;
+  height: $mobile-header-height;
+  background-color: $grey-darker;
+  color: $white;
+
+  & > .logo {
+    height: 100%;
+  }
+
+  & > .header__list {
+    position: absolute;
+    top: $mobile-header-height;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - #{$mobile-header-height});
+    background-color: $grey-dark;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: $header-height;
+  }
+}

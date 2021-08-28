@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.nav__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-bottom: 1px solid $beige;
+
+  & > a,
+  & > span {
+    display: block;
+    padding: $gutter;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .nav__list--sub {
+    padding: 0 $gutter;
+    max-height: 0px;
+    background-color: $beige;
+    font-weight: normal;
+  }
+
+  & .nav__list--sub.expanded {
+    max-height: 666px;
+  }
+
+  & .nav__list--sub::before,
+  & .nav__list--sub::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -24px;
+    right: $gutter;
+    width: 12px;
+    height: 2px;
+    background-color: $white;
+  }
+
+  & .nav__list--sub::after {
+    transform: rotate(90deg);
+  }
+
+  & .nav__list--sub.expanded::after {
+    transform: rotate(0deg);
+  }
+}
