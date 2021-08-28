@@ -12,10 +12,20 @@ class NavItem extends React.Component {
       }
     }
   }
+
+  onHover (evt) {
+    if (window.innerWidth < 1024) return;
+    console.log(evt.type);
+  }
+
+  onClick (evt) {
+    if (window.innerWidth >= 1024) return;
+    console.log(evt.type);
+  }
   
   render () {
     return (
-      <li tabIndex={this.idx}>
+      <li tabIndex={this.idx} onMouseOver={ this.onHover } onClick={ this.onClick }>
         <span>{ this.label }</span>
         { this.subitems && this.subitems.length 
           ? <ul>{  this.subitems.map((si, i) => ( 

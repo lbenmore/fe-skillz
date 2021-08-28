@@ -1,22 +1,9 @@
 import React from "react";
 
-class SubNavItem extends React.Component {
-  constructor (props) {
-    super(props);
-    for (const _ in props) {
-      if (typeof props[_] === 'object' && !Array.isArray(props[_])) {
-        for (const __ in props[_]) this[__] = props[_][__];
-      } else {
-        this[_] = props[_];
-      }
-    }
-  }
-  
-  render () {
-    return (
-      <li>{ this.label }</li>
-    )
-  }
-}
+/* Not as complex; no need for React.Component */
 
-export default SubNavItem;
+export default function SubNavItem (props) {
+  return (
+    <li>{ props.data.label }</li>
+  )
+}
