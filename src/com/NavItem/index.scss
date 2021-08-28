@@ -25,23 +25,74 @@
     max-height: 666px;
   }
 
-  & .nav__list--sub::before,
-  & .nav__list--sub::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -24px;
-    right: $gutter;
-    width: 12px;
-    height: 2px;
-    background-color: $white;
-  }
+  @media (max-width: 1024px) {
+    & .nav__list--sub::before,
+    & .nav__list--sub::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -24px;
+      right: $gutter;
+      width: 12px;
+      height: 2px;
+      background-color: $white;
+    }
 
-  & .nav__list--sub::after {
-    transform: rotate(90deg);
-  }
+    & .nav__list--sub::after {
+      transform: rotate(90deg);
+    }
 
-  & .nav__list--sub.expanded::after {
-    transform: rotate(0deg);
+    & .nav__list--sub.expanded::after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__item {
+    display: flex;
+    align-items: center;
+    flex-grow: 99;
+    border: none;
+    overflow: visible;
+
+    &:hover {
+      color: $gold;
+    }
+
+    & > span,
+    & > a {
+      padding: 0;
+      height: auto;
+      text-align: center;
+    }
+
+    & > .nav__list--sub {
+      position: absolute;
+      top: calc(#{$header-height} / 2);
+      left: 0;
+      width: 240px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &:nth-last-of-type(1) > .nav__list--sub,
+    &:nth-last-of-type(2) > .nav__list--sub {
+      left: auto;
+      right: 0;
+    }
+
+    &:hover > .nav__list--sub {
+      max-height: 666px;
+    }
+
+    &:hover > .nav__list--sub li {
+      color: $white;
+    }
+
+    &:hover > .nav__list--sub li:hover {
+      color: $gold;
+    }
   }
 }

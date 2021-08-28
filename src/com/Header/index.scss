@@ -17,7 +17,7 @@ header {
   & > .header__list {
     position: absolute;
     top: $mobile-header-height;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: calc(100vh - #{$mobile-header-height});
     background-color: $grey-dark;
@@ -28,5 +28,22 @@ header {
 @media (min-width: 1024px) {
   header {
     height: $header-height;
+
+    & > .logo,
+    & > .header__list {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    & > .header__list {
+      display: flex;
+      justify-content: space-between;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      width: calc(100vw - (120px + (#{$gutter} * 2)));
+      height: calc(#{$header-height} / 2);
+      overflow: visible;
+    }
   }
 }
