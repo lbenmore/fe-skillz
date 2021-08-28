@@ -4,77 +4,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Wonderful Header</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <header>
+      <input id="toggle--menu" type="checkbox" hidden>
+      <input id="toggle--1" type="radio" name="subnav" hidden>
+      <input id="toggle--2" type="radio" name="subnav" hidden>
+      <input id="toggle--3" type="radio" name="subnav" hidden>
+      <input id="toggle--4" type="radio" name="subnav" hidden>
+      <input id="toggle--5" type="radio" name="subnav" hidden>
+      <input id="toggle--6" type="radio" name="subnav" hidden>
+      <input id="toggle--7" type="radio" name="subnav" hidden>
       <div class="header__logo"></div>
+      <label class="header__hamburger" for="toggle--menu"><span></span></label>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <button>Eiusmod</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--1">Eiusmod</label>
+            <ul class="nav__list nav__list--sub nav__list--sub1">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
               <!-- for testing really really long link names
               <li>Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem Sit Voluptatem </li>
             -->
             </ul> 
           </li>
           <li class="nav__item">
-            <button>Incididunt Ut</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--2">Incididunt Ut</label>
+            <ul class="nav__list nav__list--sub nav__list--sub2">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
           <li class="nav__item">
-            <button>Labore Et</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--3">Labore Et</label>
+            <ul class="nav__list nav__list--sub nav__list--sub3">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
           <li class="nav__item">           
-            <button>Dolore Magn</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--4">Dolore Magn</label>
+            <ul class="nav__list nav__list--sub nav__list--sub4">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
           <li class="nav__item">
-            <button>Enim</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--5">Enim</label>
+            <ul class="nav__list nav__list--sub nav__list--sub5">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
           <li class="nav__item">
-            <button>Veniam</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--6">Veniam</label>
+            <ul class="nav__list nav__list--sub nav__list--sub6">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
           <li class="nav__item">
-            <button>Quis</button>
-            <ul class="nav__list nav__list--sub">
-              <li class="nav__item nav__item--sub"><button>Perspiciatis</button></li>
-              <li class="nav__item nav__item--sub"><button>Omnis Iste</button></li>
-              <li class="nav__item nav__item--sub"><button>Natus Error</button></li>
-              <li class="nav__item nav__item--sub"><button>Sit Voluptatem</button></li>
+            <label for="toggle--7">Quis</label>
+            <ul class="nav__list nav__list--sub nav__list--sub7">
+              <li class="nav__item nav__item--sub">Perspiciatis</li>
+              <li class="nav__item nav__item--sub">Omnis Iste</li>
+              <li class="nav__item nav__item--sub">Natus Error</li>
+              <li class="nav__item nav__item--sub">Sit Voluptatem</li>
             </ul> 
           </li>
         </ul>
@@ -83,4 +92,4 @@
     
     <script src="main.js"></script>
   </body>
-</html>
+  </html>

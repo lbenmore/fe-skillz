@@ -1,4 +1,5 @@
 body {
+  --gutter-sm: 8px;
   --gutter: 16px;
   --gutter-lg: 32px;
   
@@ -22,6 +23,7 @@ body {
 
 @media (max-width: 1024px) {
   body {
+    --header-height: 60px;
     --body-copy-size: 14px;
   }
 }

@@ -1,0 +1,56 @@
+@import url('variables.css');
+@import url('desktop.css');
+@import url('mobile.css');
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--grey-darkest);
+  font-family: var(--arial);
+  font-size: var(--body-copy-size);
+}
+
+button {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-size: var(--btn-copy-size);
+  pointer-events: none;
+}
+
+button:focus {
+  /* this is bad for accessibility.
+   * would request styling comp for 
+   * a focus state on the nav elements
+   */
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--header-height);
+  background-color: var(--grey-darker);
+  color: var(--white);
+  z-index: 1;
+}
+
+.header__logo {
+  background-image: url('we_are_wonderful.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
