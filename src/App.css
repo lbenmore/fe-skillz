@@ -1,0 +1,7 @@
+.logo {
+  background-color: black;
+  background-image: url('we_are_wonderful.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
