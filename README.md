@@ -1,63 +1,70 @@
-# Front End Skill Assesment
+# Getting Started with Create React App
 
-Thank you so much for your interest in a position on the Front End Development team at The Wonderful Company. We are very excited to continue our interview process with you!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Below you will find images of a header that contains subnav items. On desktop, subnav items should drop down on hover of the parent nav item. On Mobile the sub-nav should expand and collapse on click events.
+## Available Scripts
 
-We'd like you to build it. Sounds simple right? The layout is easy, heck you could pull up bootstrap and knock this out in under an hour. That is a valid approach but it won't get you very far on this assessment!
+In the project directory, you can run:
 
-The point of this skill assessment is for you to show us what you believe good development looks like. Are you into polish and visual detail? Refine the design, add some finesse. Are you a test fanatic? Show us your TDD process. Love data and multi-tier architecture? Let us see how you redux. Are you a build ninja? Let's see those muscles flexed.
+### `npm start`
 
-Here are some things we do want to see: How do you layout the project and what tools do you use? How does the project progress? What does the git history look like? Finally how do you handle loose requirements - what you bring to the table? Here are some things we value; performance, reproducibility, testing, accessibility, multi-channel deliverability (SEO, Social, Desktop, Mobile, etc...). You should assume the data is separate from the presentation.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Fork this repo into your github or push it into your preferred git provider and make sure it is open. Fill this otherwise empty repo with goodness. You have 72 hours to submit your completed project.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Please reach out if you have any questions or need further information.
+### `npm test`
 
-Good luck! We look forward to your response.
-.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## Assessment Images:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Desktop - Default**  
-![Wonderful Desktop](./wonderful-desktop.png)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Desktop - Active Subnav**  
-![Wonderful Desktop Active Subnav](./wonderful-desktop-active-subnav.png)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**Mobile - Default**  
-<img src="./wonderful-mobile.png" alt="Wonderful Mobile" width="350"/>
+### `npm run eject`
 
-**Mobile - Active Menu**  
-<img src="./wonderful-mobile-active-menu.png" alt="Wonderful Mobile Active Menu" width="350"/>
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-**Mobile - Active Subnav**  
-<img src="./wonderful-mobile-active-subnav.png" alt="Wonderful Mobile Active Subnav" width="350"/>
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Style Guide
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-**fonts**  
-font-family: Arial
+## Learn More
 
-**mobile body**  
-font-size: 14px
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**mobile menu button**  
-font-size: 12px
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**desktop body**  
-font-size: 12px
+### Code Splitting
 
-**Colors**  
-white: #ffffff  
-black: #000000  
-gold: #d1a04f  
-beige: #79766b  
-dark grey background: #151515  
-extra dark grey: #202020  
-dark grey: #353535  
-medium grey: #323232
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
