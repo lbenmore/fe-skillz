@@ -19,6 +19,7 @@
     max-height: 0px;
     background-color: $beige;
     font-weight: normal;
+    transition: max-height 0.5s;
   }
 
   & .nav__list--sub.expanded {
@@ -36,6 +37,7 @@
       width: 12px;
       height: 2px;
       background-color: $white;
+      transition: transform 0.5s;
     }
 
     & .nav__list--sub::after {
@@ -55,6 +57,7 @@
     flex-grow: 99;
     border: none;
     overflow: visible;
+    transition: color 0.5s;
 
     &:hover {
       color: $gold;
@@ -89,6 +92,7 @@
 
     &:hover > .nav__list--sub li {
       color: $white;
+      transition: color 0.5s;
     }
 
     &:hover > .nav__list--sub li:hover {

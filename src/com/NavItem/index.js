@@ -12,17 +12,12 @@ class NavItem extends React.Component {
         this[_] = props[_];
       }
     }
-    this.isMobile = window.innerWidth <= 1024;
+
     this.hasSubNav = this.subitems && !!this.subitems.length
   }
 
-  onHover (evt) {
-    if (this.isMobile) return;
-    console.log(evt.type);
-  }
-
   onClick (evt) {
-    if (!this.isMobile) return;
+    if (window.innerWidth > 1024) return;
     if (this.hasSubNav) {
       const navItemEl = evt.currentTarget;
       const subNavEl = navItemEl.querySelector('ul');
@@ -32,7 +27,7 @@ class NavItem extends React.Component {
   
   render () {
     return (
-      <li className="nav__item" tabIndex={this.idx} onMouseOver={ this.onHover.bind(this) } onClick={ this.onClick.bind(this) }>
+      <li className="nav__item" tabIndex={this.idx} onClick={ this.onClick.bind(this) }>
         { this.hasSubNav 
           ?
           <React.Fragment>
