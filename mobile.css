@@ -107,21 +107,23 @@
   
   .nav__item:not(.nav__item--sub) {
     display: block;
-    padding: var(--gutter) 0;
+    /* padding: var(--gutter) 0; */
     width: 100%;
     height: auto;
     border-bottom: 1px solid var(--beige);
+    transition: padding 0.5s;
   }
 
   .nav__list--sub {
     position: relative;
+    margin: 0;
     padding: 0;
-    max-height: 0px;
+    max-height: var(--subnav-height);
     width: 100%;
     background-color: var(--beige);
     color: var(--white);
     transform: none;
-    transition: margin 0.5s;
+    transition: max-height 0.5s;
   }
   
   .nav__item:last-of-type .nav__list--sub {
@@ -129,27 +131,33 @@
     transform: none;
   }
   
-  .nav__item > label {
+  .nav__item > span {
     display: block;
     padding: 0 var(--gutter);
     width: 100%;
+    height: 60px;
+    line-height: 60px;
   }
 
   .nav__item:hover .nav__list--sub {
-    max-height: 0px;
+    --subnav-height: 0px;
   }
   
   .nav__item--sub {
-    padding: 0;
+    padding: var(--gutter);
     color: var(--white);
   }
 
-  .nav__item:not(.nav__item--sub)::before,
-  .nav__item:not(.nav__item--sub)::after {
+  .collapsible {
+    --subnav-indicator-rotate: 90deg;
+  }
+
+  .collapsible::before,
+  .collapsible::after {
     content: '';
     display: block;
     position: absolute;
-    top: 22px;
+    top: 30px;
     right: var(--gutter);
     width: 12px;
     height: 2px;
@@ -157,51 +165,9 @@
     background-color: var(--white);
   }
 
-  .nav__item:not(.nav__item--sub)::after {
-    transform: rotate(90deg);
+  .collapsible::after {
+    transform: rotate(var(--subnav-indicator-rotate));
     transition: transform 0.3s;
-  }
-  
-  #toggle--1:checked ~ .nav .nav__list--sub1,
-  #toggle--2:checked ~ .nav .nav__list--sub2,
-  #toggle--3:checked ~ .nav .nav__list--sub3,
-  #toggle--4:checked ~ .nav .nav__list--sub4,
-  #toggle--5:checked ~ .nav .nav__list--sub5,
-  #toggle--6:checked ~ .nav .nav__list--sub6,
-  #toggle--7:checked ~ .nav .nav__list--sub7 {
-    margin-top: var(--gutter);
-    max-height: 999px;
-    transition: max-height 1s;
-  }
-  
-  #toggle--1:checked ~ .nav .nav__list--sub1 .nav__item--sub,
-  #toggle--2:checked ~ .nav .nav__list--sub2 .nav__item--sub,
-  #toggle--3:checked ~ .nav .nav__list--sub3 .nav__item--sub,
-  #toggle--4:checked ~ .nav .nav__list--sub4 .nav__item--sub,
-  #toggle--5:checked ~ .nav .nav__list--sub5 .nav__item--sub,
-  #toggle--6:checked ~ .nav .nav__list--sub6 .nav__item--sub,
-  #toggle--7:checked ~ .nav .nav__list--sub7 .nav__item--sub {
-    padding: var(--gutter);
-  }
-
-  #toggle--1:checked ~ .nav .nav__item--1,
-  #toggle--2:checked ~ .nav .nav__item--2,
-  #toggle--3:checked ~ .nav .nav__item--3,
-  #toggle--4:checked ~ .nav .nav__item--4,
-  #toggle--5:checked ~ .nav .nav__item--5,
-  #toggle--6:checked ~ .nav .nav__item--6,
-  #toggle--7:checked ~ .nav .nav__item--7 {
-    padding-bottom: 0;
-  }
-
-  #toggle--1:checked ~ .nav .nav__item--1::after,
-  #toggle--2:checked ~ .nav .nav__item--2::after,
-  #toggle--3:checked ~ .nav .nav__item--3::after,
-  #toggle--4:checked ~ .nav .nav__item--4::after,
-  #toggle--5:checked ~ .nav .nav__item--5::after,
-  #toggle--6:checked ~ .nav .nav__item--6::after,
-  #toggle--7:checked ~ .nav .nav__item--7::after {
-    transform: rotate(0deg);
   }
 
   .nav__item:hover .nav__item--sub{
@@ -212,4 +178,8 @@
   .nav__item .nav__item--sub:hover {
     color: var(--white);
   }
+
+  .nav__item--sub:last-of-type {
+    padding-bottom: var(--gutter);
+}
 }

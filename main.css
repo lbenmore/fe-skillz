@@ -16,6 +16,14 @@ body {
   font-size: var(--body-copy-size);
 }
 
+a,
+a:focus,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 button {
   background: transparent;
   border: none;

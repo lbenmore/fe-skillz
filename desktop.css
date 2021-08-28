@@ -43,7 +43,7 @@ header {
   left: 0;
   padding: 0 var(--gutter-lg);
   width: 240px;
-  max-height: 0;
+  max-height: var(--subnav-height);
   background-color: var(--grey-dark);
   overflow: hidden;
   transform: translate(calc(var(--gutter-lg) * -1), calc(var(--header-height) / 2));
@@ -57,7 +57,7 @@ header {
 }
 
 .nav__item:hover .nav__list--sub {
-  max-height: 666px;
+  --subnav-height: 666px;
 }
 
 .nav__item--sub {
