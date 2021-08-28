@@ -36,9 +36,9 @@
         ${item.label}
       </span>
       ${hasSubs ? 
-        `<ul class="nav__list nav__list--sub nav__list--sub${num}">
+        `<ul class="nav__list nav__list--sub">
           ${item.subitems.map((subitem, i) => `
-            <li class="nav__item nav__item--sub nav__item--sub${i + 1}">
+            <li class="nav__item nav__item--sub">
               <!--a href="#${item.link}/${subitem.link}">${subitem.label}</a-->
               ${subitem.label}
             </li>
@@ -55,6 +55,7 @@
         switch (that.el.dataset.active) {
           case 'false':
             $('.nav__list--sub', true).map(_ => $(_).style.setProperty('--subnav-height', '0px'));
+            $('.nav__item:not(.nav__item--sub)', true).map(_ => $(_).style.setProperty('--subnav-indicator-rotate', '90deg'));
 
             $('.nav__list--sub', false, that.el).style.setProperty('--subnav-height', '666px')
             that.el.style.setProperty('--subnav-indicator-rotate', '0deg')
