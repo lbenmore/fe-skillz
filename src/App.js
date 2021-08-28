@@ -1,5 +1,4 @@
-import Header from './com/Header';
-import './App.scss';
+import Header from './com/Header/index';
 
 export default function App() {
   return (
