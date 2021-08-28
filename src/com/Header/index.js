@@ -1,6 +1,6 @@
 import React from 'react';import Hamburger from '../Hamburger';
-import NavItem from '../NavItem';
 import Logo from '../Logo';
+import NavItem from '../NavItem';
 import pages from '../../pages.js';
 import './index.scss';
 
