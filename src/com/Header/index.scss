@@ -10,6 +10,10 @@ header {
   background-color: $grey-darker;
   color: $white;
 
+  & > .header__hamburger {
+    display: block;
+  }
+
   & > .logo {
     height: 100%;
   }
@@ -25,9 +29,24 @@ header {
   }
 }
 
+@media (max-width: 1024px) {
+  .header__list {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+
+  .header__list.active {
+    transform: translateX(0);
+  }
+}
+
 @media (min-width: 1024px) {
   header {
     height: $header-height;
+
+    & > .header__hamburger {
+      display: none;
+    }
 
     & > .logo,
     & > .header__list {
