@@ -22,19 +22,19 @@ Good luck! We look forward to your response.
 ## Assessment Images:
 
 **Desktop - Default**  
-![Wonderful Desktop](./wonderful-desktop.png)
+![Wonderful Desktop](./assets/wonderful-desktop.png)
 
 **Desktop - Active Subnav**  
-![Wonderful Desktop Active Subnav](./wonderful-desktop-active-subnav.png)
+![Wonderful Desktop Active Subnav](./assets/wonderful-desktop-active-subnav.png)
 
 **Mobile - Default**  
-<img src="./wonderful-mobile.png" alt="Wonderful Mobile" width="350"/>
+<img src="./assets/wonderful-mobile.png" alt="Wonderful Mobile" width="350"/>
 
 **Mobile - Active Menu**  
-<img src="./wonderful-mobile-active-menu.png" alt="Wonderful Mobile Active Menu" width="350"/>
+<img src="./assets/wonderful-mobile-active-menu.png" alt="Wonderful Mobile Active Menu" width="350"/>
 
 **Mobile - Active Subnav**  
-<img src="./wonderful-mobile-active-subnav.png" alt="Wonderful Mobile Active Subnav" width="350"/>
+<img src="./assets/wonderful-mobile-active-subnav.png" alt="Wonderful Mobile Active Subnav" width="350"/>
 
 ---
 
