@@ -49,7 +49,7 @@ header {
 }
 
 .header__logo {
-  width: calc(116px + (var(--gutter) * 2));
+  width: calc(116px + var(--gutter-lg));
   height: var(--header-height);
   background-image: url('we_are_wonderful.png');
   background-position: center;
@@ -76,6 +76,7 @@ header {
 .nav__item {
   display: flex;
   align-items: center;
+  transition: color 0.3s;
 }
 
 .nav__item button {
@@ -97,6 +98,7 @@ header {
   background-color: var(--grey-dark);
   overflow: hidden;
   transform: translate(calc(var(--gutter-lg) * -1), calc(var(--header-height) / 2));
+  transition: max-height 0.5s;
 }
 
 .nav__item:last-of-type .nav__list--sub {
@@ -106,7 +108,7 @@ header {
 }
 
 .nav__item:hover .nav__list--sub {
-  max-height: 999px;
+  max-height: 666px;
 }
 
 .nav__item--sub {
