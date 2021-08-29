@@ -14,14 +14,13 @@ class NavItem extends React.Component {
     }
 
     this.hasSubNav = this.subitems && !!this.subitems.length
+    this.state = { subnavActive: false };
   }
 
   onClick (evt) {
     if (window.innerWidth > 1024) return;
     if (this.hasSubNav) {
-      const navItemEl = evt.currentTarget;
-      const subNavEl = navItemEl.querySelector('ul');
-      subNavEl.classList.toggle('expanded');
+      this.setState(state => ({ subnavActive: !state.subnavActive }));
     }
   }
   
@@ -32,7 +31,7 @@ class NavItem extends React.Component {
           ?
           <React.Fragment>
             <span>{ this.label }</span>
-            <ul className={ "nav__list--sub" }>{ this.subitems.map((si, i) => ( 
+            <ul className={ `nav__list--sub ${this.state.subnavActive ? 'expanded' : ''}` }>{ this.subitems.map((si, i) => ( 
               <SubNavItem data={ si } idx={ i } key={ i } /> 
             )) }</ul>
           </React.Fragment> 
