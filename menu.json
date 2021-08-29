@@ -40,6 +40,14 @@
       {
         "label": "Sit Voluptatem",
         "link": "sit-voluptatem"
+      },
+      {
+        "label": "Natus Error",
+        "link": "natus-error"
+      },
+      {
+        "label": "Sit Voluptatem",
+        "link": "sit-voluptatem"
       }
     ]
   },
@@ -61,14 +69,6 @@
         "link": "perspiciatis"
       },
       {
-        "label": "Omnis Iste",
-        "link": "omnis-iste"
-      },
-      {
-        "label": "Natus Error",
-        "link": "natus-error"
-      },
-      {
         "label": "Sit Voluptatem",
         "link": "sit-voluptatem"
       }
@@ -78,10 +78,6 @@
     "label": "Veniam",
     "link": "veniam",
     "subitems": [
-      {  
-        "label": "Perspiciatis",
-        "link": "perspiciatis"
-      },
       {
         "label": "Omnis Iste",
         "link": "omnis-iste"
@@ -103,6 +99,18 @@
       {  
         "label": "Perspiciatis",
         "link": "perspiciatis"
+      },
+      {
+        "label": "Omnis Iste",
+        "link": "omnis-iste"
+      },
+      {
+        "label": "Natus Error",
+        "link": "natus-error"
+      },
+      {
+        "label": "Sit Voluptatem",
+        "link": "sit-voluptatem"
       },
       {
         "label": "Omnis Iste",
