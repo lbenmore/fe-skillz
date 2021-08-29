@@ -23,7 +23,7 @@ class Header extends React.Component {
         <ul className={ `header__list ${this.state.menuActive ? 'active' : ''}` }>{ pages.map((page, i) => (
           <NavItem idx={ i } data={ page } key={ i } />
         )) }</ul>
-        <Hamburger clickfn={ this.toggleMenu.bind(this) } active="0" />
+        <Hamburger clickfn={ this.toggleMenu.bind(this) } />
       </header>
     ) 
   }
