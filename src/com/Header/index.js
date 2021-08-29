@@ -20,9 +20,11 @@ class Header extends React.Component {
     return (
       <header>
         <Logo />
-        <ul className={ `header__list ${this.state.menuActive ? 'active' : ''}` }>{ pages.map((page, i) => (
-          <NavItem idx={ i } data={ page } key={ i } />
-        )) }</ul>
+        <ul className={ `header__list ${this.state.menuActive ? 'active' : ''}` }>
+          { pages.map((page, i) => (
+            <NavItem idx={ i } data={ page } key={ i } />
+          )) }
+        </ul>
         <Hamburger clickfn={ this.toggleMenu.bind(this) } />
       </header>
     ) 
