@@ -30,21 +30,16 @@
     that.el = document.createElement('li');
     that.el.classList.add('nav__item', `nav__item--${num}`);
 
-    that.el.innerHTML = `
-      <span>
-        <!--a href="#${item.link}">${item.label}</a-->
-        ${item.label}
-      </span>
-      ${hasSubs ? 
-        `<ul class="nav__list nav__list--sub">
-          ${item.subitems.map((subitem, i) => `
-            <li class="nav__item nav__item--sub">
-              <!--a href="#${item.link}/${subitem.link}">${subitem.label}</a-->
-              ${subitem.label}
-            </li>
-          `).join('')}
-        </ul>` : ''}
-    `;
+    that.el.innerHTML = hasSubs ? 
+      `<span>${item.label}</span>
+      <ul class="nav__list nav__list--sub">
+        ${item.subitems.map((subitem, i) => `
+          <li class="nav__item nav__item--sub">
+            <a href="#/${item.link}/${subitem.link}">${subitem.label}</a>
+          </li>
+        `).join('')}
+      </ul>` : 
+      `<a href="#/${item.link}">${item.label}</a>`;
 
     if (hasSubs) {
       that.active = true;

@@ -130,7 +130,8 @@
     transform: none;
   }
   
-  .nav__item > span {
+  .nav__item:not(.nav__item--sub) > span,
+  .nav__item:not(.nav__item--sub) > a {
     display: block;
     padding: 0 var(--gutter);
     width: 100%;
