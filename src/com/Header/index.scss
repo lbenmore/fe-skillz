@@ -15,6 +15,7 @@ header {
   }
 
   & > .logo {
+    width: 80px;
     height: 100%;
   }
 
@@ -43,6 +44,10 @@ header {
 @media (min-width: 1024px) {
   header {
     height: $header-height;
+
+    & > .logo {
+      width: 120px;
+    }
 
     & > .header__hamburger {
       display: none;
