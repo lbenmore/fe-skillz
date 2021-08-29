@@ -31,9 +31,11 @@ class NavItem extends React.Component {
           ?
           <React.Fragment>
             <span>{ this.label }</span>
-            <ul className={ `nav__list--sub ${this.state.subnavActive ? 'expanded' : ''}` }>{ this.subitems.map((si, i) => ( 
-              <SubNavItem data={ si } idx={ i } key={ i } /> 
-            )) }</ul>
+            <ul className={ `nav__list--sub ${this.state.subnavActive ? 'expanded' : ''}` }>
+              { this.subitems.map((si, i) => ( 
+                <SubNavItem data={ si } idx={ i } key={ i } /> 
+              )) }
+            </ul>
           </React.Fragment> 
           :
           <a href={ `#${this.link}` }>{ this.label }</a>
